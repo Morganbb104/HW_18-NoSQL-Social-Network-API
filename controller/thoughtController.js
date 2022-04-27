@@ -40,6 +40,23 @@ updateThought(req, res) {
 
 },
 
+//   getThoughtById
+getThoughtById({ params }, res) {
+    Thought.findOne({ _id: params.id })
+      .then((dbThoughtData) => {
+        // if no thought is found
+        if (!dbThoughtData) {
+          res.status(404).json({ message: "No thought with this ID" });
+          return;
+        }
+        res.json(dbThoughtData);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(400).json(err);
+      });
+  },
+
 // delete a thought
 deleteThought(req, res) {
     Thought.findOneAndDelete({_id: req.params.id})
