@@ -1,6 +1,22 @@
 # HW_18-NoSQL-Social-Network-API
+Demo video link
 
-# 18 NoSQL: Social Network API
+
+# About Task
+Here we build a API test task for a social network. 
+There are routes for doing the following functions
+creating users, updating users, and deleting users. 
+creating and deleting thoughts and reactions,adding and deleting friends.
+No front end  interface provided for this app, all routes have been tested by Postman or Insomnia.
+
+# Technologies Used
+1. MongoDB
+2. Mongoose
+3. Javascript
+4. Nodemon
+5. Postman 
+
+
 
 ## Your Task
 
