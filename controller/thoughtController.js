@@ -98,12 +98,16 @@ addReaction(req, res) {
 //delete Reaction
 
 deleteReaction(req, res) {
+  console.log(req.params)
+
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
-      { $pull: { reactions: req.params.reactionID } },
+      { $pull: { reactions: { reactionId: req.params.reactionId} } },
       { runValidators: true, new: true }
+      // { new: true }
     )
       .then((thought) =>
+      // console.log("get the deleteReaction")
         !thought
           ? res
               .status(404)
