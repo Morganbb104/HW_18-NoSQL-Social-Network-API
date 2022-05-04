@@ -1,7 +1,7 @@
 # HW_18-NoSQL-Social-Network-API
 Demo video link
 
-https://drive.google.com/drive/folders/1mUTB-VQMY-yDPyN-L8iqDxKp2P_khFgW?usp=sharing
+https://drive.google.com/file/d/1k67C9TIzdqRhv9AJmqnIAcxEtXODRsRQ/view
 
 
 ## About Task
